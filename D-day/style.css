@@ -1,0 +1,133 @@
+html{
+    background-color: white;
+}
+
+.content{
+    margin: 50px auto;
+    padding: 10px;
+    width: 800px;
+    height: 500px;
+    background-color: hsla(50, 10%, 30%, 0.6);
+}
+
+.initial_set{
+    position: relative;
+    top: 30px;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+}
+
+.initial_set > label{
+    color: white;
+    font-size: 1.7rem;
+    margin: 20px 0px;
+    display: block;
+    text-shadow: 2px 2px 1px hsla(50, 10%, 30%, 0.6);
+}
+
+.initial_set.move{
+    transition: 1s;
+    transform:translateY(-50px);
+}
+
+.initial_set.close{
+    transition: 1s;
+    display: none;
+
+}
+
+.main_content{
+    display: none;
+    margin: 20px;
+    width: 95%;
+    height: 95%;
+}
+
+.main_content.move{
+    transition: 1s;
+    transform:translateY(0px);
+}
+
+.main_content.open{
+    transition: 1s;
+    display: block;
+}
+
+.main_date{
+    color: white;
+    font-size: 1.7rem;
+    text-shadow: 2px 2px 1px hsla(50, 10%, 30%, 0.6);
+}
+
+.D_day{
+    height: 80%;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.days{
+    display: inline-block;
+    width: 30%;
+    font-size: 5rem;
+    color: white;
+    text-shadow: 2px 2px 1px hsla(50, 10%, 30%, 0.6);
+}
+
+.days::before{
+    content: "days";
+    font-size: 1.5rem;
+    position: absolute;
+    top: 180px;
+    left: 120px;
+}
+
+.days::after{
+    content: "";
+    height: 20%;
+    position: relative;
+    left: 70px;
+
+    border: 1px dashed white;
+}
+
+.hours{
+    display: inline-block;
+    width: 30%;
+    font-size: 5rem;
+    color: white;
+    text-shadow: 2px 2px 1px hsla(50, 10%, 30%, 0.6);
+}
+
+.hours::before{
+    content: "hours";
+    font-size: 1.5rem;
+    position: absolute;
+    top: 180px;
+    left: 350px;
+}
+
+.hours::after{
+    content: "";
+    height: 20%;
+    position: relative;
+    left: 60px;
+
+    border: 1px dashed white;
+}
+
+.minutes{
+    display: inline-block;
+    width: 30%;
+    font-size: 5rem;
+    color: white;
+    text-shadow: 2px 2px 1px hsla(50, 10%, 30%, 0.6);
+}
+
+.minutes::before{
+    content: "minutes";
+    font-size: 1.5rem;
+    position: absolute;
+    top: 180px;
+    left: 570px;
+}
